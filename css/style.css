@@ -1,0 +1,256 @@
+body {
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  background: #f4f8fb;
+  margin: 0;
+  color: #222;
+}
+header {
+  background: linear-gradient(90deg, #3498db 0%, #ff9800 100%);
+  color: #fff;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+nav {
+  margin: 10px 0;
+}
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+main, section, .card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 900px;
+  width: 90%;
+  box-sizing: border-box;
+}
+main:hover, section:hover, .card:hover {
+  box-shadow: 0 12px 48px 0 rgba(127, 188, 255, 0.18);
+}
+
+input, select, textarea {
+  background: rgba(255,255,255,0.35);
+  border: 1.5px solid rgba(127,188,255,0.18);
+  color: #222;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+input:focus, select:focus, textarea:focus {
+  border: 1.5px solid #7fbcff;
+  box-shadow: 0 0 8px #7fbcff55;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 60%;
+  margin: 16px auto 0 auto;
+  display: block;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #0056b3;
+}
+
+.intro {
+  margin-bottom: 30px;
+}
+.intro-beauty {
+  background: linear-gradient(90deg, #e3f0ff 0%, #fffbe6 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(127, 188, 255, 0.10);
+  padding: 36px 36px 28px 36px;
+  margin-bottom: 36px;
+  position: relative;
+  overflow: hidden;
+}
+.intro-icon {
+  font-size: 2em;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.intro-list {
+  margin: 18px 0 0 0;
+  padding-left: 24px;
+  font-size: 1.08em;
+}
+.intro-list li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+.intro-highlight {
+  margin-top: 22px;
+  background: linear-gradient(90deg, #ffe082 0%, #b2ebf2 100%);
+  color: #333;
+  font-weight: bold;
+  font-size: 1.15em;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(255, 193, 7, 0.08);
+  text-align: center;
+}
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#featured-universities {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+}
+.univ-card {
+  background: #f9fbfd;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  padding: 18px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.univ-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.univ-logo-large {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 15px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+}
+th, td {
+  border: 1px solid #e1e8ed;
+  padding: 10px 8px;
+  text-align: center;
+}
+th {
+  background: #f0f6fa;
+}
+input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #bcdff1;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 220px;
+}
+.review {
+  background: #f6fafd;
+  border-left: 4px solid #3498db;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.review-time {
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.add-review {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+.add-review h3 {
+  margin-top: 0;
+  color: #495057;
+}
+.add-review form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.add-review input,
+.add-review textarea {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.add-review textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.add-review button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: flex-start;
+}
+.add-review button:hover {
+  background: #0056b3;
+}
+.review-count {
+  color: #6c757d;
+  font-size: 12px;
+  margin-left: 10px;
+}
+footer {
+  text-align: center;
+  color: #888;
+  padding: 18px 0 10px 0;
+  font-size: 15px;
+}
+#add-univ-result, #match-result {
+  margin-top: 12px;
+  font-size: 1.1em;
+  color: #3498db;
+  min-height: 24px;
+}
+.detail-gap {
+  display: inline-block;
+  width: 200px;
+}
+.detail-flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.right-info {
+  text-align: left;
+  min-width: 220px;
+}
+.avg-score-align, .adv-major-align {
+  position: absolute;
+  left: 365px;
+  white-space: nowrap;
+}
+
+#university-detail {
+  position: relative;
+} 

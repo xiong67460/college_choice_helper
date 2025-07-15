@@ -1,0 +1,27 @@
+{
+  "name": "college-choice-helper",
+  "version": "1.0.0",
+  "description": "大学择校辅助工具",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sqlite": "^4.2.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "university",
+    "college",
+    "web"
+  ],
+  "author": "Yao Guanxiong",
+  "license": "MIT"
+}

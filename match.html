@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>院校智能匹配</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>院校智能匹配</h1>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="universities.html">大学列表</a>
+      <a href="match.html">智能匹配</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro intro-beauty">
+      <h2><span class="intro-icon">🤖</span> 智能择校</h2>
+      <p>输入你的基本信息，系统将基于大模型为你智能推荐最适合的高校，并给出推荐理由。</p>
+      <div class="intro-highlight">科学择校，个性推荐，助你圆梦理想大学！</div>
+    </section>
+    <section id="match-section">
+      <h2>院校智能匹配</h2>
+      <form id="match-form">
+        <input type="text" name="studentName" placeholder="姓名" required>
+        <input type="number" name="score" placeholder="高考分数" required>
+        <select name="subjectType" required>
+          <option value="">请选择文理科</option>
+          <option value="理科">理科</option>
+          <option value="文科">文科</option>
+        </select>
+        <select name="gender" required>
+          <option value="">请选择性别</option>
+          <option value="男">男</option>
+          <option value="女">女</option>
+        </select>
+        <input type="text" name="homeLocation" placeholder="所在地" required>
+        <input type="text" name="targetLocation" placeholder="目标地区" required>
+        <input type="text" name="major" placeholder="意向专业">
+        <select name="type">
+          <option value="">不限类型</option>
+          <option value="综合">综合</option>
+          <option value="师范">师范</option>
+          <option value="理工">理工</option>
+        </select>
+        <button type="submit">匹配院校</button>
+      </form>
+      <div id="match-result"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 大学择校辅助工具</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html> 

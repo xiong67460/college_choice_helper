@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大学详情 - 大学填报辅助工具</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="university-name">大学详情</h1>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="universities.html">大学列表</a>
+      <a href="match.html">智能择校</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro intro-beauty">
+      <h2><span class="intro-icon">🏫</span> 大学详情</h2>
+      <p>查看该校的基本信息、历年分数线、优势专业和真实学生评价，助你多维度了解目标院校。</p>
+      <div class="intro-highlight">欢迎补充评价和建议，让信息更真实！</div>
+    </section>
+    <section id="university-detail">
+      <!-- 保证内容区能正常渲染.detail-flex-row结构，无需具体更改 -->
+    </section>
+    <section>
+      <h2>历年分数线</h2>
+      <canvas id="scoreChart" width="600" height="300"></canvas>
+    </section>
+    <section>
+      <h2>学生评价</h2>
+      <div id="reviews">
+        <!-- 评价由main.js动态填充 -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 大学择校辅助工具</p>
+  </footer>
+  <script src="js/chart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html> 
