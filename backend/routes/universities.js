@@ -128,7 +128,7 @@ router.post('/match', async (req, res) => {
       },
       {
         headers: {
-          'Authorization': 'Bearer sk-99103916f7fc44678946ae253157b29f',
+          'Authorization': 'Bearer your_api_key',
           'Content-Type': 'application/json'
         }
       }
