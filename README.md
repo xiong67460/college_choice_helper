@@ -18,16 +18,18 @@
 - 智能推荐：集成大模型API（如DeepSeek）
 
 ## 部署与运行
-1. **安装依赖**
+1. **确保可以访问外网**
+2. **在 `backend/routes/universities.js` 文件的智能匹配院校相关部分，按照注释提示填入你自己的 DeepSeek API Key。**
+3. **安装依赖**
    ```bash
    npm install
    ```
-2. **启动后端服务**
+4. **启动后端服务**
    ```bash
    node backend/server.js
    ```
-3. **访问前端页面**
-   直接用浏览器打开 `index.html` 即可体验全部功能。
+5. **访问前端页面**
+   在浏览器地址栏输入 http://localhost:3000/index.html
 
 > 默认数据库已包含部分高校和评价数据，支持动态增删改查。
 
