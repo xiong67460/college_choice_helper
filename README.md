@@ -29,7 +29,7 @@
    npm start
    ```
 5. **访问前端页面**
-   在浏览器地址栏输入 http://localhost:3000/index.html进入首页
+   在浏览器地址栏输入 http://localhost:3000/index.html 进入首页
 
 > 默认数据库已包含部分高校和评价数据，支持动态增删改查。
 
