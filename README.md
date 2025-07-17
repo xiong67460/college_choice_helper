@@ -15,10 +15,10 @@
 - 前端：HTML5、CSS3、原生JavaScript
 - 后端：Node.js + Express
 - 数据库：SQLite
-- 智能推荐：集成大模型API（如DeepSeek）
+- 智能推荐：集成大模型API（DeepSeek）
 
 ## 部署与运行
-1. **确保可以访问外网**
+1. **确保可以访问外网**（依赖Chart.js CDN）
 2. **在 `backend/routes/universities.js` 文件的智能匹配院校相关部分，按照注释提示填入你自己的 DeepSeek API Key。**
 3. **安装依赖**
    ```bash
@@ -26,10 +26,10 @@
    ```
 4. **启动后端服务**
    ```bash
-   node backend/server.js
+   npm start
    ```
 5. **访问前端页面**
-   在浏览器地址栏输入 http://localhost:3000/index.html
+   在浏览器地址栏输入 http://localhost:3000/index.html进入首页
 
 > 默认数据库已包含部分高校和评价数据，支持动态增删改查。
 
