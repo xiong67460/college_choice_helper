@@ -1,6 +1,4 @@
 // chart.js
-// 依赖Chart.js CDN
-
 function renderScoreChart(years, scores, name) {
   const ctx = document.getElementById('scoreChart');
   if (!ctx) return;
