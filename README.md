@@ -18,18 +18,26 @@
 - 智能推荐：集成大模型API（DeepSeek）
 
 ## 部署与运行
-1. **确保可以访问外网**（依赖Chart.js CDN）
-2. **在 `backend/routes/universities.js` 文件的智能匹配院校相关部分，按照注释提示填入你自己的 DeepSeek API Key。**
-3. **安装依赖**
+
+### 前置要求
+- **安装Node.js**（版本12.0以上）
+- **确保联网**（智能择校功能需要调用大模型API）
+- **配置API Key**：在 `backend/routes/universities.js` 文件的智能匹配院校相关部分，按照注释提示填入你自己的 DeepSeek API Key
+
+### 手动运行
+1. **安装依赖**
    ```bash
    npm install
    ```
-4. **启动后端服务**
+2. **启动后端服务**
    ```bash
    npm start
    ```
-5. **访问前端页面**
+3. **访问前端页面**
    在浏览器地址栏输入 http://localhost:3000/index.html 进入首页
+
+### 一键运行
+直接双击运行 `start.bat` 脚本，自动完成依赖安装和服务启动。
 
 > 默认数据库已包含部分高校和评价数据，支持动态增删改查。
 
@@ -54,13 +62,13 @@ college_choice_helper/
 ├── detail.html           # 大学详情页
 ├── match.html            # 智能择校页
 ├── package.json          # Node依赖配置
+├── start.bat             # 一键启动脚本
 └── README.md             # 项目说明
 ```
 
 ## 说明
 - 推荐使用最新版Chrome浏览器获得最佳体验。
 - 如需自定义初始数据，可修改 `backend/database.js`。
-- 智能择校功能需联网调用大模型API。
 
 ---
 如有建议或问题，欢迎反馈与交流！ 
