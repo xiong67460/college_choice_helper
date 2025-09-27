@@ -128,6 +128,7 @@ router.post('/match', async (req, res) => {
       },
       {
         headers: {
+          //将your_api_key替换为你的DeepSeek API Key
           'Authorization': 'Bearer your_api_key',
           'Content-Type': 'application/json'
         }
