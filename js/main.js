@@ -1,5 +1,9 @@
 // main.js - 前后端分离版本
 
+/*
+// 根据当前域名自动判断API地址
+const API_BASE_URL = window.location.protocol + '//' + window.location.host + '/api';
+*/
 const API_BASE_URL = 'http://localhost:3000/api';
 
 // 获取JSON数据
